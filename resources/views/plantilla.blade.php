@@ -73,7 +73,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" t href="/preview">Grafica Demo</a>
-                                <a class="dropdown-item" href="/voto">Login</a>
+                                <a class="dropdown-item" href="/login">Login</a>
                               
                             </div>
                             </li>
