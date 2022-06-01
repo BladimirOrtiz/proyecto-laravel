@@ -37,7 +37,9 @@
             <div class="form-group">
                 <label for="foto">Foto:</label>
                 <input type="file" id="foto" accept="image/png, image/jpeg" 
-                 class="form-control" name="foto" />
+                 class="form-control" name="foto"
+                 onchange="Filevalidation()" />
+                 
             </div>
             <div class="form-group">
                 <label for="perfil">Perfil:</label>
@@ -47,6 +49,7 @@
 
             <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
+        
     </div>
 </div>
 @endsection

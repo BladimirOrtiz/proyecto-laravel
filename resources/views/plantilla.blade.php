@@ -17,17 +17,67 @@
     <header>
         <div class="row">
             <div class="col-md-2">
-                <img src="../image/Logotecnm.png" width="200px">
+            <img src="https://www.voaxaca.tecnm.mx/wp-content/uploads/2020/05/itvo.ico" width="100px" style="margin: 7%;">
             </div>
             <div class="col-md-8 text-center">
                 <h1>Instituto Tecnológico del Valle de Oaxaca</h1>
                 <h5>Elección de la reina ITVO</h5>
-            </div>
-            <div class="col-md-2">
-
-            </div>
-
-        </div>
+            
+        <nav class="navbar navbar-nav navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Candidato
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" t href="/candidato/create">Candidato Agregar</a>
+                                <a class="dropdown-item" href="/candidato">Candidato Listar</a>
+                                <a class="dropdown-item" href="/candidato/pdf">Candidato PDF</a>
+                            </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Casilla
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" t href="/casilla/create">Casilla Agregar</a>
+                                <a class="dropdown-item" href="/casilla">Casilla Listar</a>
+                                <a class="dropdown-item" href="/casilla/pdf">Casilla PDF</a>  
+                            </div>
+                            </li>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Eleccion
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" t href="/eleccion/create">Eeccion Agregar</a>
+                                <a class="dropdown-item" href="/eleccion">Eleccion Listar</a>
+                                <a class="dropdown-item" href="/eleccion/pdf">Eleccion PDF</a>  
+                            </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Voto
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" t href="/voto/create">Voto Agregar</a>
+                                <a class="dropdown-item" href="/voto">Voto Listar</a>
+                                <a class="dropdown-item" href="/voto/pdf">Voto PDF</a>
+                            </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Mas
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" t href="/preview">Grafica Demo</a>
+                                <a class="dropdown-item" href="/voto">Login</a>
+                              
+                            </div>
+                            </li>
+</nav>
     </header>
     <div class="container">
         @yield('content')

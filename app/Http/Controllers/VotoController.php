@@ -10,6 +10,8 @@ use App\Models\Voto;
 use App\Models\Votocandidato;
 use Exception;
 use Illuminate\Support\Facades\DB;
+use Barryvdh\DomPDF\Facade\Pdf as PDF; //--- Se agregó esta línea
+
 
 class VotoController extends Controller
 {   
@@ -118,7 +120,12 @@ class VotoController extends Controller
     {
         //
     }
-
+    public function generatepdf()
+    {
+                $votos   = Voto::all();
+                $pdf = PDF::loadView('voto/list', ['votos'=>$votos  ]);
+                return $pdf->stream('archivo.pdf');
+    }
     /**
      * Show the form for editing the specified resource.
      *
@@ -189,6 +196,7 @@ class VotoController extends Controller
        
         return view('message',compact('message','success'));
     }
+ 
 
     /**
      * Remove the specified resource from storage.

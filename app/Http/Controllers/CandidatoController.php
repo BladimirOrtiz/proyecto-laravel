@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Candidato;
 
+use Barryvdh\DomPDF\Facade\Pdf as PDF; //--- Se agregó esta línea
 class CandidatoController extends Controller
 {
     /**
@@ -69,7 +70,12 @@ class CandidatoController extends Controller
         //echo $candidato->nombrecompleto . " se guardo correctamente ... ";
         return redirect("candidato");
     }
-
+    public function generatepdf()
+    {
+                $candidatos = Candidato::all();
+                $pdf = PDF::loadView('candidato/list', ['candidatos'=>$candidatos]);
+                return $pdf->stream('archivo.pdf');
+    }
 
 
     /**
